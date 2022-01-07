@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head> 
+    <meta charset="utf-8">
+    <title>     WEB DEV CREATIONS        </title>                                                
+    <link rel="stylesheet" type="text/css" href="style.css">   <!-- Attach a CSS Sheet-->
+    
+
+    <!-- How to link menu list to other webpage using Script Function-->
+    <script type="text/javascript">
+        function loadUrl(newLocation) {
+            window.location = newLocation;
+            return false;
+        }
+    </script>
+   <!-- Show This Link then click and connect to other website
+       <script>
+        var x = document.getElementById("button");
+       
+          
+        x.innerHTML = "Click on the button to generate "
+                + "a link using JavaScript.";
+          
+        function getlink() {
+              
+            // Create anchor element.
+            var a = document.createElement('a'); 
+              
+            // Create the text node for anchor element.
+            var link = document.createTextNode("This is link");
+              
+            // Append the text node to anchor element.
+            a.appendChild(link); 
+              
+            // Set the title.
+            a.title = "This is Link";
+              
+            // Set the href property.
+            a.href = "https://www.youtube.com"; 
+              
+            // Append the anchor element to the body.
+            document.body.appendChild(a); 
+        }
+    </script> -->
+
+
+</head>
+<body>
+    
+
+<header >
+   
+<div class="main">
+<div class="logo"></div>
+
+ <img src="TPS.png" height="105px" width="100px" margin="50px"> 
+
+
+<ul>
+ <!--Create header contents-->                                    
+ <li class="active"><a href ="#">Home</a></li>
+ <li><a href="javascript:void" onclick="loadUrl('Service.html'); return false;" href ="#">Service</a></li>
+ <li><a href="javascript:void" onclick="loadUrl('Gallery.html'); return false;" href="#">Gallery</a> </li>
+ <li><a href="javascript:void" onclick="loadUrl('About.html'); return false;" href="#">About</a></li>
+ <li><a href="javascript:void" onclick="loadUrl('Contact.html'); return false;" href="#">Contact</a></li>
+</ul> 
+</div>
+
+<div class="title">
+ <h1> BE OUR GUEST</h1>
+</div>
+
+
+<div id="button">
+    <a href="javascript:void" onclick="loadUrl('video.html'); return false;" href="#" class="btn">WATCH VIDEOS</a>    
+    <a href="javascript:void" onclick="loadUrl('booking.html'); return false;" href="#" class="btn">BOOK ROOM</a>    
+    </div>
+ <!--
+<div id="button">
+<a href="javascript:void" onclick="loadUrl('https://youtu.be/7sL3uIr6p5Q'); return false;" href="#" class="btn">WATCH VIDEOS</a>    
+<a href="javascript:void" onclick="loadUrl('https://www.agoda.com/th-th/pages/agoda/default/DestinationSearchResult.aspx?selectedproperty=44882&city=16056&hid=44882&site_id=1891451&tag=44fac2e8-a9e7-649c-7814-601728ca9e23&device=c&network=g&adid=492754777426&rand=11092033777797817147&expid=&adpos=&aud=kwd-4203788827&gclid=EAIaIQobChMIt-Hll_vz7wIVz_vjBx2gjg_IEAAYASAAEgLzHPD_BwE&checkin=2021-04-19&checkout=2021-04-20&adults=1&childs=0&rooms=1&los=1'); return false;" href="#" class="btn">BOOK ROOM</a>    
+</div>
+-->
+</header>
+</body>
+</html>

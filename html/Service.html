@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html>
+<head>
+ 
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="Service.css">   <!-- Attach a CSS Sheet-->
+    <link rel="stylesheet" type="text/css" href="index.html">   <!-- Attach a CSS Sheet-->
+    <link rel="stylesheet" type="text/css" href="Gallery.html">   <!-- Attach a CSS Sheet-->
+    <link rel="stylesheet" type="text/css" href="About.html">   <!-- Attach a CSS Sheet-->
+    <link rel="stylesheet" type="text/css" href="Contact.html">   <!-- Attach a CSS Sheet-->
+
+    <!--ADD ICONS-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+   <meta name ="viewport" content="width = device-width, initial-scale =1">  
+
+   <!--Add Special Fonts-->
+   <link rel="preconnect" href="https://fonts.gstatic.com">
+   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+   
+
+<style>
+
+*{
+    margin: 0;
+    padding: 0;
+  font-family: Century Gothic;
+  }
+  
+body{
+    background-color: #FDF5E6;
+}
+
+.mylogo img{
+    float: left;
+    width: 100px;
+    height: 100px;
+    padding-left: 80px;
+}
+
+ul{
+    float: right;
+    list-style-type: none;
+    margin-top: 25px;
+}
+
+  ul li {
+      display: inline-block;     
+  }
+
+  ul li a{
+    text-decoration: none;
+    color: fff;
+    padding: 5px 20px;
+    border: 1px solid transparent;
+    transition: 0.6s ease;    
+}
+
+    ul li a:hover{
+        background-color: #fff;
+        color: #000;
+
+    }
+
+    ul li.active a{
+        background-color: #fff;
+        color: #000;
+    }
+
+/*--feature--*/
+#feature{
+    width: 100%;
+    padding: 10px 0;
+    
+}
+
+.title-text{
+    text-align: center;
+    align-items: center;
+    padding-bottom: 60px;
+    background-color:#FDF5E6;
+}
+/*
+.title-text p {
+    margin: auto;
+    font-size: 20px;
+    color:#3fb2f5;
+    font-weight: bold;
+    position: relative;
+    z-index: 1;
+    display: inline-block;   
+}
+.title-text p::after{
+    content: '';
+    width: 50px;
+    height: 35px;
+    background: linear-gradient(#3fb2f5, #fff);
+    position: absolute;
+    top: -20px;
+    left: 0;
+    z-index: -1;
+    transform: rotate(10deg);
+    border-top-left-radius:35px;
+    border-top-right-radius: 35px; 
+} */
+
+
+.title-text h1{
+    margin: 30px;
+    font-size: 60px;
+    color: #2A435B;
+    margin-left: 42%;
+    margin-right: 57%;
+    display: block;
+    font-family: 'Roboto', sans-serif;
+}
+
+.feature-box{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    text-align: center;
+}
+
+.features{
+    flex-basis: 50%;
+    margin-top: 20px;
+}
+
+.features-img{
+    flex-basis: 50%;
+     margin: auto;
+    }
+
+.features-img img{
+    width:70%;
+    border-radius: 10px;
+}
+
+.features h1{
+    margin-top: auto;
+    text-align: left;
+    margin-bottom:15px;
+    font-weight: bold;
+    color:	#2A435B;
+    font-size: 27px ;
+    font-family: 'Roboto', sans-serif;
+}    
+
+.features p{
+    margin-top: 5px;
+    font-size: 15px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+}    
+.feature-desc{
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+}
+.feature-icon{
+    width: 50px;
+    height: 50px;
+    font-size: 30px;
+    line-height: 50px;
+    border-radius: 8px;
+    color:#C5B358;
+    border:  1px solid #C5B358;
+    margin-bottom: 5px;
+}
+.feature-text{
+    padding-bottom: 0 20px;
+    text-align: initial;
+}
+@media screen and (max-width: 770px){
+    .title-text h1{
+        font-size: 35px;
+    }
+
+.features{
+    flex-basis: 100%;
+}
+.features-img{
+    flex-basis: 100%;
+}
+.features-img img{
+    width: 100%;
+}
+}
+
+.spa-img{
+    margin-top: 50px;
+}
+
+.header {
+    padding-right: 150px;
+  }
+</style>
+
+</head>
+<body>
+
+    <header class="header">
+    <div> 
+    <ul>
+        <!--Create header contents-->                   
+        <li><a href="index.html" href="#">Home</a></li>                 
+        <li class="active"><a href ="#">Service</a></li>
+        <li><a href="Gallery.html"  href="#">Gallery</a> </li>
+        <li><a href="About.html"  href="#">About</a></li>
+        <li><a href="Contact.html"  href="#">Contact</a></li>
+       </ul> 
+    </div><br>
+    </header>
+   
+    
+     <!--Features-->
+     <section id="feature">
+        <div class="mylogo"> <img src="TPS.png"  height="100px" width="100px" > </div>
+        <div class="title-text">
+            <br><br>
+            <h1>Service</h1>
+        </div>
+        <div class="feature-box">
+            <div class="features">
+                <h1>Experienced Staff</h1>
+                <div class="features-desc">
+                    <div class="feature-icon">
+                        <i class="fa fa-shield"></i>
+                  
+                    </div>
+                    <div class="feature-text">
+         <p>The hotel are full of skills and experience staffs - they’re embarking on a journey 
+             of passion, comfort and uniqueness.</p><br>
+                    </div>
+                </div>
+
+                <h1> Pre-Booking Online </h1>
+                <div class="features-desc">
+                    <div class="feature-icon">
+                        <i class="fa fa-check-square-o"></i>
+                    </div>
+
+                    <div class="feature-text">
+         <p>You can also use Online payment to book a room with our staff.</p><br>
+                    </div>
+                </div>
+                <h1> Affordable Cost </h1>
+                <div class="features-desc">
+                    <div class="feature-icon">
+                        <i class="fa fa-inr"></i>
+                    </div>
+                    <div class="feature-text">
+         <p>These days our World's Economy has been affected by Covid-19:
+             In this year, we provides monthly promotion from 10%-35% discount.</p><br>
+                    </div>
+                </div>
+
+
+            </div>
+
+            <div class="features-img">
+                <img src="staffs.jpg" width="250px" height="400px">
+            </div>
+        </div>
+    </section>
+    
+<section>
+
+<div >
+         <div class="spa-img">
+        <img src="spa.png" alt="spa" height ="800px" width="100%"> 
+                      </div>
+    
+       
+         <div>
+          <img src="package.png" alt="packages" height ="800px" width="100%"> 
+                 </div>
+
+                 <div>
+                    <video width="100%" height="800px" controls>
+                        <source src="hotelAds.mp4" type="video/mp4">
+                      </video>
+                  </div>
+           
+                  <div>
+                    <img src="booking.png" alt="booking" height ="700px" width="100%"> 
+                           </div>
+</div>
+
+</section>
+
+</body>
+</html>
